@@ -26,8 +26,11 @@ function init(lemot) {
 
     //ecoute des touches 
     document.getElementById("send").addEventListener("click", () => {
-        console.log(arrLetterYet);
+        
         sendLetter = document.getElementById("userLetter").value.toUpperCase();
+        let  isLetters = /^[A-Za-z]+$/;
+        if(sendLetter.match(isLetters)){
+            console.log(arrLetterYet);
         // check si la lettre entrer existe déjà
         letExistYet = arrLetterYet.indexOf(sendLetter);
         //si la lettre n'a pas encore été proposé
@@ -68,6 +71,9 @@ function init(lemot) {
         } else {
             letterYet();
             essaie++;
+        }
+        }else {
+            alert("Employé que des lettres, et sans accents");
         }
     });
     document.getElementById("renew").addEventListener("click", () => {
