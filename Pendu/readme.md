@@ -10,4 +10,5 @@ C'est un programme réaliser en JS dans le cadre de ma formation.
   * Le pendu est rendu visuellement à l'aide de svg. (pendu ANDROID)
   * Pour les tricheurs...le mot est afficher dans la console aisni que la table de lettre déjà proposé.
   
+  Let's Play >> [Pendu](https://emilemarkus.github.io/portfolio/Pendu/)
 
